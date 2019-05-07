@@ -23,6 +23,7 @@ cp config.json.default config.json
 vim config.json
 ```
 
+
 ## Execution
 
 Let it be:
@@ -36,10 +37,10 @@ chmod u+x cli.js
 
 ### Settings
 
-* `api`: URL of the WHM address of your server. E.g. https://server.monkey.com:2087/
+* `api`: URL of the WHM address of your server *requires trailing slash!*. E.g. https://server.monkey.com:2087/
 * `credentials.hash`: Server's remote access key
 
 ## How does it work?
 
-The program requests [a list of all the accounts](https://documentation.cpanel.net/display/SDK/WHM+API+1+Functions+-+listaccts) in the server, extracts the users from the list and issues a new request per user to [Email::listpopssingle](https://documentation.cpanel.net/display/SDK/cPanel+API+2+Functions+-+Email%3A%3Alistpopssingle) to obtain all email accounts from the user's account.
+The program requests [a list of all the accounts](https://documentation.cpanel.net/display/SDK/WHM+API+1+Functions+-+listaccts) in the server, extracts the users from the list and issues a new request per user to [Email::3Alistpopswithdisk](https://documentation.cpanel.net/display/DD/cPanel+API+2+Functions+-+Email%3A%3Alistpopswithdisk) to obtain all email accounts from the user's account including their each email account's disk usage in human readable format.
 
