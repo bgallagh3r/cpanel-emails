@@ -13,7 +13,7 @@ This script retrieves & prints a list of all the email addresses created in a cP
 Clone this project and install the package:
 
 ```
-git clone git@github.com:luissquall/whm-emails.git
+git clone git@github.com:bgallagh3r/whm-emails.git
 cd whm-emails
 npm install
 ```
