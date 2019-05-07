@@ -42,5 +42,5 @@ chmod u+x cli.js
 
 ## How does it work?
 
-The program requests [a list of all the accounts](https://documentation.cpanel.net/display/SDK/WHM+API+1+Functions+-+listaccts) in the server, extracts the users from the list and issues a new request per user to [Email::Alistpopswithdisk](https://documentation.cpanel.net/display/DD/cPanel+API+2+Functions+-+Email%3A%3Alistpopswithdisk) to obtain all email accounts from the user's account including their each email account's disk usage in human readable format.
+The program requests [a list of all the accounts](https://documentation.cpanel.net/display/SDK/WHM+API+1+Functions+-+listaccts) in the server, extracts the users from the list and issues a new request per user to [Email::listpopswithdisk](https://documentation.cpanel.net/display/DD/cPanel+API+2+Functions+-+Email%3A%3Alistpopswithdisk) to obtain all email accounts from the user's account including their each email account's disk usage in human readable format.
 
